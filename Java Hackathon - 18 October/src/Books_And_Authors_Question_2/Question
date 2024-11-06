@@ -1,0 +1,136 @@
+Books And Authors
+
+Create below Classes and attributes.
+
+Author
+authorId: Integer
+authorName: String
+
+Book
+bookId: Integer
+title: String
+genre: String
+price: double
+author: Author
+
+Create a business class and implement the following functionalities:
+
+getBooksBelongingToAGenre:
+    • This method will take a list a Book and genre as input parameters.
+    • It should find all the books belonging to the input genre and should return the list of books matching the genre.
+    • If no matching genre is found, print an error message “Genre is not available in the list”
+
+calculateDiscountedPrice:
+    • This method will take a list of Book, genre and discount percentage as input parameters.
+    • It should find the books matching the genre and apply the discount to the book.
+    • It should return list of books matching the genre after applying the discount. The output should be printed
+      followed by the below text. “Discounted <genre> Books:”
+    • If no matching genre is found, print an error message “Discounted books are unavailable in the given genre.”
+    • Discounted Price = Price – ( Price * discount%)
+
+Refer the sample output for more clarity.
+
+Notes
+    • All string comparisons need to be case-insensitive.
+    • Assume an author has written only one book.
+
+Sample Input and Output
+    1. First, read the number of Author objects to be added to the array/list.
+    2. Next, read the attributes for each Author object in the mentioned sequence.
+    3. Read the attributes for each Book object.
+    4. Repeat steps 2 to 3 for the number of Author objects given in the first line of input.
+    5. Next, read the parameters to be passed to the respective methods.
+
+
+Test Case 1:
+
+Input 1:
+5
+101
+Agatha Christie
+11
+Murder on the Orient Express
+Crime
+20.00
+102
+Arthur Conan Doyle
+12
+The Hound of the Baskervilles
+Crime
+25.00
+103
+Stephen Edwin King
+13
+A Memoir of the Craft
+Horror
+40.00
+104
+Clayton Emery
+14
+The Burning Goddess
+Fantasy
+30.00
+105
+Trisha Ashley
+15
+Wedding Tiers
+Fantasy
+35.00
+Crime
+Fantasy
+20
+
+Output1:
+AuthorName: Agatha Christie, Title: Murder on the Orient Express
+AuthorName: Arthur Conan Doyle, Title: The Hound of the Baskervilles
+
+Discounted Fantasy Books:
+AuthorName: Clayton Emery, Title: The Burning Goddess, Updated Price: 24.0
+AuthorName: Trisha Ashley, Title: Wedding Tiers, Updated Price: 28.0
+
+
+
+Input 2:
+5
+101
+Agatha Christie
+11
+Murder on the Orient Express
+Crime
+20.00
+102
+Arthur Conan Doyle
+12
+The Hound of the Baskervilles
+Crime
+25.00
+103
+Stephen Edwin King
+13
+A Memoir of the Craft
+Horror
+40.00
+104
+Clayton Emery
+14
+The Burning Goddess
+Fantasy
+30.00
+105
+Trisha Ashley
+15
+Wedding Tiers
+Fantasy
+35.00
+Crime
+Romance
+20
+
+Output1:
+AuthorName: Agatha Christie, Title: Murder on the Orient Express
+AuthorName: Arthur Conan Doyle, Title: The Hound of the Baskervilles
+
+Discounted books are unavailable in the given genre.
+
+
+
