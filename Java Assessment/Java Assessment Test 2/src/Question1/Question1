@@ -1,0 +1,45 @@
+### Question 1 - Multiple of 3
+
+Write main method in Solution class.
+
+In the main method, read an Integer (containing only numeric digits without decimal and special characters) and
+check whether the sum of its digits is in multiple of 3.
+
+If the given input is in multiple of 3, then print TRUE (as a String) else print FALSE(as a String).
+
+For example: if the given value is 333, 3+3+3 is 9. which is multiple of 3, hence TRUE has to printed.
+
+Sample Input1:
+333
+
+Output:
+TRUE
+
+Sample Input2:
+200
+
+Output:
+FALSE
+
+
+-----------------------------------------------------
+
+Sample code snippet for reference:
+
+Please use below code to build your solution.
+
+------------------------------------------------------
+
+public class Solution
+{
+	public static void main(String[] args)
+	{
+
+		// code to read values
+		// code to display the result
+	}
+}
+
+Instruction:
+
+Kindly mention class name at **MyClass**
